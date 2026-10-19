@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEON-CALC // Futuristic Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-bg"></div>
+<main class="calc" aria-label="Calculator">
+  <header class="calc-head">
+    <span class="logo">NEON<b>CALC</b></span>
+    <span class="status"><i></i> ONLINE</span>
+  </header>
+
+  <section class="screen">
+    <div class="expr" id="expr" aria-live="off">&nbsp;</div>
+    <div class="result" id="result" aria-live="polite">0</div>
+  </section>
+
+  <section class="keys" id="keys">
+    <button data-act="clear" class="fn">AC</button>
+    <button data-act="back" class="fn">⌫</button>
+    <button data-v="%" class="fn">%</button>
+    <button data-v="/" class="op">÷</button>
+
+    <button data-v="7">7</button>
+    <button data-v="8">8</button>
+    <button data-v="9">9</button>
+    <button data-v="*" class="op">×</button>
+
+    <button data-v="4">4</button>
+    <button data-v="5">5</button>
+    <button data-v="6">6</button>
+    <button data-v="-" class="op">−</button>
+
+    <button data-v="1">1</button>
+    <button data-v="2">2</button>
+    <button data-v="3">3</button>
+    <button data-v="+" class="op">+</button>
+
+    <button data-v="(" class="fn">(</button>
+    <button data-v="0">0</button>
+    <button data-v=".">.</button>
+    <button data-v=")" class="fn">)</button>
+
+    <button data-act="equals" class="eq wide">=</button>
+  </section>
+
+  <section class="history">
+    <div class="h-head"><span>HISTORY</span><button id="clearHist" class="link">purge</button></div>
+    <ul id="histList"></ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
